@@ -1,2 +1,2 @@
-# easha-health-care
-health care project (diseases-prediction)
+Health-Care-ChatBot
+health care project 
