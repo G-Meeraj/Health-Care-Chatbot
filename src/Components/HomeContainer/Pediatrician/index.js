@@ -1,0 +1,1 @@
+export { Pediatrician } from "./Pediatrician";

@@ -1,0 +1,79 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+    height: 100px;  /* ✅ Fixed navbar height */
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;  
+    height: 100%;  /* ✅ Prevents it from increasing */
+}
+
+.logo img {
+    width: 270px;  /* ✅ Fixed width */
+
+}
+
+/* Navigation Links */
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li {
+    margin-right: 30px;
+    display: inline;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.navLinks li:hover {
+    color: #0265A7;
+}
+
+/* Book Appointment Button */
+.bookBtn button {
+    padding: 2px 5px;
+    background-color: #04446E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.bookBtn button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        height: auto; /* ✅ Allow height to adjust */
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bookBtn {
+        margin-top: 10px;
+    }
+}

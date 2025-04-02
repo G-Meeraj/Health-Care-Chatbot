@@ -1,0 +1,121 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e293b;
+  }
+  
+  .subtitle {
+
+    font-size: 19px;
+    margin-top: 8px;
+  }
+  
+  /* Tabs */
+  .tabsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .tabsContainer button {
+    padding: 10px 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .activeTab {
+    background-color:#04446E;
+    color: white;
+  }
+  
+  .inactiveTab {
+    background-color: #e2e8f0;
+    color: #1e293b;
+  }
+  
+  .tabsContainer button:hover {
+    background-color:#04446E;
+    color: white;
+  }
+  
+  /* Content Section */
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  /* Left - Image */
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Right - Text Content */
+  .textContainer {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .heading {
+    color:#0265A7;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .description {
+  
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  
+  .list {
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+  
+  .listItem {
+    color:#0265A7;
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 900px) {
+    .contentContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .textContainer {
+      text-align: center;
+    }
+  
+    .list {
+      text-align: left;
+    }
+  }
+  
